@@ -9,7 +9,7 @@ before_script:
 
 script:
   - bundle
-  - bundle exec rake
+  - bundle exec rake --trace
 
 deploy:
   provider: pages
