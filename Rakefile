@@ -2,6 +2,7 @@ task :delete do
   sh "rm -rf _site"
   sh "rm -rf .sass-cache"
   sh "rm -rf .asset-cache"
+  sh "rm -rf _bib"
 end
 
 task :submodule do
@@ -11,7 +12,7 @@ task :submodule do
 end
 
 task :bower do
-    sh "bower install"
+    sh "bower install --allow-root"
 end
 
 task :build do
