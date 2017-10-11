@@ -1,0 +1,21 @@
+{
+  "name": "mywebsite",
+  "homepage": "https://github.com/Ohjeah/Ohjeah.github.io",
+  "authors": [
+    "mq <mquade@uni-potsdam.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "academicons": "https://github.com/jpswalsh/academicons.git#^1.7.0"
+  }
+}

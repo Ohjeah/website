@@ -1,0 +1,3 @@
+[submodule "bibliography"]
+	path = _bib
+	url = https://github.com/Ohjeah/bibliography.git

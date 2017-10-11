@@ -1,0 +1,40 @@
+---
+
+---
+
+{{ reference | replace_first: 'M. Quade', '<strong>M. Quade</strong>' }}
+
+
+<div id="{{key}}-materials">
+
+  <small>
+    → <a href="#{{key}}-bibtex" onclick="$('#{{key}}-bibtex').toggle();">toggle bibtex</a>
+  </small>
+
+  {% if entry.abstract %}
+  <small>
+    , <a href="#{{key}}-abstract" onclick="$('#{{key}}-abstract').toggle();">toggle abstract</a>
+  </small>
+  {% endif %}
+
+  {% if link %}
+  <small>
+    , <a href="{{ link }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+  </small>
+  {% endif %}
+
+  {% if entry.doi %}
+  <small>, <a href="http://dx.doi.org/{{entry.doi}}"><i class="ai ai-doi"></i>: {{entry.doi}}</a></small>
+  {% elsif entry.url%}
+  <small>, <a href="{{entry.url}}"><i class="fa fa-external-link" aria-hidden="true"></i></a></small>
+  {% endif %}
+
+  <pre id="{{key}}-bibtex" style="display: none;"><small>{{ entry.bibtex }}</small></pre>
+
+  {% if entry.abstract %}
+  <p>
+    <small id="{{key}}-abstract" style="display: none;">{{ entry.abstract }}</small>
+  </p>
+  {% endif %}
+
+</div>

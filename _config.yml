@@ -1,0 +1,100 @@
+title: "Markus"
+title2: "Quade" # default: ""
+description: ""
+keywords: "symbolic regression genetic programming"
+#url: stat.physik.uni-potsdam.de
+url: ohjeah.github.io
+#baseurl: /~mquade
+#baseurl: ""
+
+disqus_shortname: mquade
+repo: http://github.com/Ohjeah/Ohjeah.github.io
+comments: true
+
+unpublished: false
+future: false
+
+# Build settings
+permalink   : /:year/:title/
+
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Markus Quade"
+  job      : "physicist"
+  bio      : "My research promotes genetic programming based symbolic regression and its application to dynamical systems. I am broadly interested in time series prediction, system identification, control theory, and synchronization."
+  email    : mquade@uni-potsdam.de
+  url      : http://www.stat.physik.uni-potsdam.de/~mquade/
+  github   : http://github.com/Ohjeah
+  twitter  : https://twitter.com/ohjeah
+  orcid    : 0000-0002-9123-048X
+  gscholar : rGjuWxAAAAAJ
+
+
+og_locale: "en_US"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+  - jekyll/scholar
+  - jekyll-pandoc
+  - jekyll-assets
+
+encoding: utf-8
+
+## Markdown Parser
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+
+
+include: ['.htaccess', "pages"]
+exclude: ['Gemfile', 'Gemfile.lock', 'bower.json', 'Rakefile', 'node_modules', 'LICENSE.md', 'README.md', '.vscode', ".tavis-ci.yml"]
+scholar:
+  style: ./_assets/bib/ieee-with-url.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: type, year
+  group_order: descending
+
+  source: ./_bib/
+  bibliography_template: bibliography
+  repository: ./dl
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+  bibtex_filters:
+  - superscript
+  - latex
+
+  query: "@*"
+
+assets:
+  compress:
+      css: sass
+      js: uglifier
+  assets:
+      - "*.csl"
+      - "*.eot"
+      - "*.woff"
+      - "*.ttf"
+      - "*.svg"
+
+  digest: false
+  sources:
+    - _assets/bower
+    - _assets/bib

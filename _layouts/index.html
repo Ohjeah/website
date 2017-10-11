@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+---
+
+<center>
+{% img author width=300 height=auto %}
+</center>
+<div class="container">
+<p class="lead">Hi, I'm <strong class="author-name" itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>. <br>
+{{ site.author.bio }}</p>
+
+{{content}}
+
+</div>

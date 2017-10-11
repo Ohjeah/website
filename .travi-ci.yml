@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - 2.3.3
+
+before_script:
+  - apt update
+  - apt install npm -y
+  - npm install bower
+
+script:
+  - bundle
+  - bundle exec rake
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: _site
+  repo: Ohjeah/Ohjeah.github.io
+  target_branch: master
+  on:
+    branch: master
