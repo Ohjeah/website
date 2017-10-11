@@ -15,8 +15,7 @@ task :bower do
 end
 
 task :build do
-    sh "sass --style compressed assets/scss/styles.scss:assets/css/styles.css --sourcemap=none"
-    sh "jekyll build"
+    sh "bundle exec jekyll build"
 end
 
 task :default => [:submodule, :delete, :bower, :build]
