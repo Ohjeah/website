@@ -20,3 +20,7 @@ deploy:
   target_branch: master
   on:
     branch: master
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
