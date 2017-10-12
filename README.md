@@ -5,4 +5,4 @@
 
 Build status: [![Build Status](https://travis-ci.org/Ohjeah/ohjeah.github.io-source.svg?branch=master)](https://travis-ci.org/Ohjeah/ohjeah.github.io-source)
 
-Hosted at: http://github.com/Ohjeah.github.io
+Hosted at: http://github.com/Ohjeah/Ohjeah.github.io
