@@ -19,4 +19,4 @@ task :build do
     sh "bundle exec jekyll build"
 end
 
-task :default => [:delete, :submodule, :bower, :build]
+task :default => [:delete, :submodule, :build]

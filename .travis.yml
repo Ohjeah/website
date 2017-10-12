@@ -11,6 +11,7 @@ before_script:
   - npm install bower
 
 script:
+  - bower install
   - bundle
   - bundle exec rake --trace
 
