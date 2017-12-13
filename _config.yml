@@ -58,7 +58,7 @@ kramdown:
     syntax_highlighter: rouge
 
 
-include: ['keybase.txt', "pages"]
+include: ['.htaccess', 'keybase.txt', "pages"]
 exclude: ['Gemfile', 'Gemfile.lock', 'bower.json', 'Rakefile', 'node_modules', 'LICENSE.md', 'README.md', '.vscode', ".tavis-ci.yml"]
 scholar:
   style: ./_assets/bib/ieee-with-url.csl
