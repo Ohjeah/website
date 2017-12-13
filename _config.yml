@@ -3,12 +3,12 @@ title2: "Quade" # default: ""
 description: ""
 keywords: "symbolic regression genetic programming"
 #url: stat.physik.uni-potsdam.de
-url: ohjeah.github.io
+url: markusqua.de
 #baseurl: /~mquade
 #baseurl: ""
 
 disqus_shortname: mquade
-repo: http://github.com/Ohjeah/Ohjeah.github.io
+repo: http://github.com/Ohjeah/Ohjeah.github.io-source
 comments: true
 
 unpublished: false
@@ -41,7 +41,7 @@ author:
 
 og_locale: "en_US"
 
-gems:
+plugins:
   - bourbon
   - jekyll-paginate
   - jekyll/scholar
@@ -58,7 +58,7 @@ kramdown:
     syntax_highlighter: rouge
 
 
-include: ['.htaccess', "pages"]
+include: ['.well-known', "pages"]
 exclude: ['Gemfile', 'Gemfile.lock', 'bower.json', 'Rakefile', 'node_modules', 'LICENSE.md', 'README.md', '.vscode', ".tavis-ci.yml"]
 scholar:
   style: ./_assets/bib/ieee-with-url.csl
