@@ -9,7 +9,7 @@ group :development do
     gem 'pygments.rb', '~> 0.6.3'
     gem 'jekyll-scholar', '~> 5.8.5'
     gem 'jekyll-pandoc'
-    gem 'jekyll-assets', "= 2.1.3"
+    gem 'jekyll-assets', "~> 3.0"
     gem "uglifier"
     gem "font-awesome-sass"
     gem "rake"
