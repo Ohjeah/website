@@ -147,7 +147,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bourbon (~> 4.2, >= 4.2.6)
+  bourbon
   font-awesome-sass
   html-proofer
   jekyll (~> 3.0, >= 3.0.1)
