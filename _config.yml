@@ -70,6 +70,8 @@ scholar:
   group_by: type, year
   group_order: descending
 
+  type_aliases: { misc: unpublished}
+
   source: ./_bib/
   bibliography_template: bibliography
   repository: ./dl
