@@ -261,3 +261,28 @@ hr {
     }
   }
 }
+
+.bibliography {
+    font-weight: 300;
+
+    strong { // cv owner
+        font-weight: 600;
+    }
+    small { // date
+        //font-size: $default-font-size;
+        color: $medium-gray-color;
+    }
+    a {
+        color: $base-font-color;
+        text-decoration: none;
+        i { // title
+            color: $blue-color;
+        }
+        &:hover, &:active {
+            text-decoration: none;
+            i, strong { // title and cv owner
+                text-decoration: underline;
+            }
+        }
+    }
+}
