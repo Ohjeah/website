@@ -1,0 +1,72 @@
+.nav {
+  min-height: 64px;
+}
+
+.nav-hr {
+  color: lighten($light-gray-color, 5%);
+  height: 1px;
+}
+
+.navbar {
+  float: right;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+  background-color: $base-background-color;
+
+  li {
+    display: inline-block;
+    padding: 0 .6em;
+    float: left;
+  }
+
+  a {
+    @extend .link;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  float: left;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.navbar .burger {
+  display: none;
+  font-size: $base-font-size;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar li {display: none;}
+  .navbar .burger {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .burger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}

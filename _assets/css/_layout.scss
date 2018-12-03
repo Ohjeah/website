@@ -69,7 +69,6 @@ hr {
 }
 
 .site-header {
-  border-bottom: 1px solid lighten($light-gray-color, 5%);
   margin-bottom: $small-spacing;
   min-height: 80px;
 }
@@ -90,41 +89,6 @@ hr {
   }
 }
 
-.logo {
-  float: left;
-  margin: 0 0 1em 0;
-  cursor: pointer;
-  letter-spacing: 0.8px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 300;
-
-  span {
-    font-weight: 700;
-  }
-}
-
-.nav {
-  min-height: 64px;
-}
-
-.navbar {
-  float: right;
-  margin: 0;
-  position: relative;
-  padding: 0;
-  pointer-events: all;
-  cursor: pointer;
-
-  li {
-    display: inline-block;
-    padding: 0 .6em;
-  }
-
-  a {
-    @extend .link;
-  }
-}
 
 .post-list {
 
