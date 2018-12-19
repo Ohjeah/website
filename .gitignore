@@ -1,10 +1,11 @@
-_site/
+src/_assets/vendor
+public
 .sass-cache/
 .asset-cache/
 .jekyll-cache
 .bundle/
 node_modules
-bower
+
 #bibliography
 
 # Windows image file caches

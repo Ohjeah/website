@@ -8,23 +8,14 @@ cache:
   - node_modules
   - _assets/vendor
 
-before_install:
-  - rvm install 2.3
-  - rvm use 2.3 --fuzzy
-  - export GEMDIR=$(rvm gemdir)
-
-before_script:
-  - npm install -g bower
-
 script:
-  - bundle
-  - bundle exec rake --trace
+  - make build
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: _site
+  local_dir: public
   repo: Ohjeah/Ohjeah.github.io
   target_branch: master
   on:

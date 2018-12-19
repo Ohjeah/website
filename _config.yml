@@ -1,15 +1,11 @@
-title: "Markus"
-title2: "Quade" # default: ""
-description: ""
-keywords: "symbolic regression genetic programming"
-#url: stat.physik.uni-potsdam.de
+source: src
+destination: public
 url: markusqua.de
-#baseurl: /~mquade
-#baseurl: ""
 
-disqus_shortname: mquade
+title: "Markus Quade"
+
+
 repo: http://github.com/Ohjeah/Ohjeah.github.io-source
-comments: true
 
 unpublished: false
 future: false
@@ -17,20 +13,10 @@ future: false
 # Build settings
 permalink   : /:year/:title/
 
-
-source: ./
-destination: ./_site
-
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
-
 # Author settings
 author:
   name     : "Markus Quade"
   job      : "physicist"
-  bio      : "My research promotes genetic programming based symbolic regression and its application to dynamical systems. I am broadly interested in time series prediction, system identification, control theory, and synchronization."
   email    : mquade@uni-potsdam.de
   url      : http://www.stat.physik.uni-potsdam.de/~mquade/
   github   : http://github.com/Ohjeah
@@ -42,11 +28,10 @@ author:
 og_locale: "en_US"
 
 plugins:
-  - bourbon
-  - jekyll-paginate
   - jekyll/scholar
   - jekyll-pandoc
   - jekyll-assets
+  - jekyll-last-modified-at
 
 encoding: utf-8
 
@@ -57,14 +42,12 @@ kramdown:
     input: GFM
     syntax_highlighter: rouge
 
-
-include: ['.htaccess', 'keybase.txt', "pages"]
-exclude: ['Gemfile', 'Gemfile.lock', 'bower.json', 'Rakefile', 'node_modules', 'LICENSE.md', 'README.md', '.vscode', ".tavis-ci.yml"]
 scholar:
-  bibliography_template: bibliography
-  source: ./_bib/
-  repository: ./dl
-  style:        ./_assets/bib/ieee-with-url.csl
+  bibliography_template: "bibliography"
+  source:       "./_assets/vendor/bib"
+  bibliography: "ref.bib"
+  repository: "./dl"
+  style:        "./_assets/csl/ieee-with-url.csl"
   sort_by:      year
   order:        descending
   group_by:     type
@@ -75,17 +58,13 @@ scholar:
   bibliography_list_tag: "ul"
 
 assets:
-  compress:
-      css: sass
-      js: uglifier
-  assets:
-      - "*.csl"
-      - "*.eot"
-      - "*.woff"
-      - "*.ttf"
-      - "*.svg"
-
-  digest: false
+  cdn:
+    baseurl: true
   sources:
-    - _assets/bower
-    - _assets/bib
+    - _assets/vendor
+    - _assets/vendor/css
+    - _assets/vendor/fonts
+    - _assets/vendor/js
+  compress:
+    css:  sassc
+    js:   uglifier

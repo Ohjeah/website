@@ -1,12 +1,11 @@
-@import "bourbon"; // can also use bower
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon"; // v4
 
 @import "variables";
 @import "base/base";
-
 @import "layout";
 @import "syntax-highlighting";
 
-@import "font-awesome-sprockets"; // can also use bower
+@import "font-awesome-sprockets";
 @import "font-awesome";
 
 @mixin embed-font($font-name, $font-filepath-and-name){
@@ -20,4 +19,4 @@
     }
 }
 
-@include embed-font("academicons", "academicons/fonts/academicons");
+@include embed-font("academicons", "academicons");

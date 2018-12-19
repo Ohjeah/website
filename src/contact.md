@@ -6,7 +6,7 @@ permalink: /contact/
 
 If you want to get in touch just send me an [<i class="far fa-envelope" aria-hidden="true"></i>](mailto:{{ site.author.email }}) or a short message [<i class="fab fa-telegram fa-1x" aria-hidden="true"></i>](https://t.me/ohjeah).
 
-For some privacy: here is my [GPG public key]({{ site.baseurl}}/dl/key.asc).
+For some privacy: here is my [GPG public key]({{ '/dl/key.asc' | absolute_url }}).
 
 
 ## Some other profiles:

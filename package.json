@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "academicons": "git+https://github.com/Ohjeah/academicons.git",
+    "bourbon": "4.3.4"
+  }
+}

@@ -1,0 +1,61 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% assign page_title = '' %}
+  {% if page.title == "Home" %}
+        {% assign page_title = site.author.name %}
+  {% else %}
+      {% assign page_title = site.author.name | append: "|" | append: page.title %}
+  {% endif %}
+
+  <title>{{ page_title }}</title>
+
+  {% assign page_description = '' %}
+  {% capture page_description %}
+      {{ page.description | strip_html | strip | rstrip | strip_newlines | truncate: 160 }}
+  {% endcapture %}
+  {% capture page_description %}
+      {{ page_description | strip | rstrip | lstrip | escape | strip_newlines }}
+  {% endcapture %}
+
+  <meta name="description" content="{{ page_description }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords  }}">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+
+  <!-- Social: Facebook / Open Graph -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:site_name" content="{{ site.author.name }}">
+  <meta property="og:locale" content="{{ site.og_locale }}">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="{{ site.twitter_card }}">
+  <meta name="twitter:site" content="{{ site.twitter_site }}">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+
+  <!-- Social: Google+ / Schema.org  -->
+  <meta itemprop="name" content="{{ page_title }}">
+  <meta itemprop="description" content="{{ page_description }}">
+
+
+  <!-- Canonical link tag -->
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+
+  {% asset main.css %}
+  {% asset academicons.css %}
+
+  {% asset burger.js %}
+  {% asset jquery.js %}
+  {% asset bib.js %}
+</head>
