@@ -11,7 +11,6 @@ bib:
 	mkdir -p $(VENDOR_DIR)/bib
 	wget https://raw.githubusercontent.com/Ohjeah/bibliography/master/references.bib -O $(VENDOR_DIR)/bib/ref.bib
 
-
 bundle: Gemfile Gemfile.lock
 	$(BUNDLE) config 	jobs 8
 	$(BUNDLE) install --path $(BUNDLE_DIR)
@@ -24,7 +23,6 @@ install-assets: bundle npm bib
 	mkdir -p $(VENDOR_DIR)/fonts
 	mkdir -p $(VENDOR_DIR)/css
 
-
 	cp $(NPM_DIR)/jquery/dist/*.js $(VENDOR_DIR)/js/.
 	cp $(NPM_DIR)/academicons/css/academicons.css $(VENDOR_DIR)/css/.
 	cp $(NPM_DIR)/academicons/fonts/* $(VENDOR_DIR)/fonts/.
@@ -32,7 +30,7 @@ install-assets: bundle npm bib
 serve: install-assets
 	$(JEKYLL) serve
 
-build:
+build: install-assets
 	$(JEKYLL) build
 
 dist-clean: clean
