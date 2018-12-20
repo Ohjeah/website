@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="page container">
+  <div class="page-content">
+    <div id="section-to-print">
+      <div id="header">
+        <div id="photo-container">
+          <div id="photo" style="background-image: url({{ 'author.jpg' | asset:'@path' }});"></div>
+        </div>
+        <div id="data">
+            <div id="position"><p>{{ site.author.job }}</p></div>
+            <div id="subdata">
+              {% assign title_suffix = site.author.title_suffix %}
+              {% assign title_prefix = site.author.title_prefix %}
+              {% assign first_name = site.author.first_name %}
+              {% assign last_name = site.author.last_name %}
+              <div id="name">
+                <h1 data-first-name="{{ first_name }}" data-last-name="{{ last_name }}">
+                    {% if title_prefix %}{{ title_prefix }} {% endif %}{{ first_name | replace: ' ', '&nbsp;'}}
+                    <strong>{{ last_name | replace: ' ', '&nbsp;'}}</strong>{% if title_suffix %}, {{ title_suffix }} {% endif %}
+                </h1>
+              </div>
+              <div id="private">
+                <div>
+                  <p id="address">{{ site.author.address }}</p>
+                  {% include cv.social.html %}
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="print-btn-div">
+          <button class="button" id="print-btn" onclick="window.print()"><i class="far fa-file-pdf" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div id="cv">
+        {{ content }}
+      </div>
+      <div id="date">
+      Last Update: {% last_modified_at %m/%d/%Y %}. A detailed CV is available upon <a href="{{'/contact' | prepend: site.baseurl }}">request</a>.
+      </div>
+    </div>
+  </div>
+</article>

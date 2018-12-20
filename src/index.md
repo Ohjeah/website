@@ -8,7 +8,7 @@ title: Home
 </center>
 <div class="container">
 
-  <p class="lead">Hi, I'm <strong class="author-name" itemprop="name">{{ site.author.name }}</strong>. <br>
+  <p class="lead">Hi, I'm <strong class="author-name" itemprop="name">{{ site.author.first_name }} {{ site.author.last_name }}</strong>. <br>
   My research promotes genetic programming based symbolic regression and its application to dynamical systems. I am broadly interested in time series prediction, system identification, control theory, and synchronization.
   </p>
 

@@ -15,12 +15,14 @@ permalink   : /:year/:title/
 
 # Author settings
 author:
-  name     : "Markus Quade"
-  job      : "physicist"
-  email    : mquade@uni-potsdam.de
+  first_name: Markus
+  last_name: Quade
+  title_suffix: PhD
+  address : Potsdam, Germany
+  job      : Physicist
+  email    : schreib@markusqua.de
   url      : http://www.stat.physik.uni-potsdam.de/~mquade/
-  github   : http://github.com/Ohjeah
-  twitter  : https://twitter.com/ohjeah
+  github   : Ohjeah
   orcid    : 0000-0002-9123-048X
   gscholar : rGjuWxAAAAAJ
 
@@ -34,13 +36,6 @@ plugins:
   - jekyll-last-modified-at
 
 encoding: utf-8
-
-## Markdown Parser
-markdown: kramdown
-highlighter: rouge
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
 
 scholar:
   bibliography_template: "bibliography"

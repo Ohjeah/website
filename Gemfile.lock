@@ -8,6 +8,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bibtex-ruby (4.4.7)
       latex-decode (~> 0.0)
     citeproc (1.0.9)
@@ -131,6 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  babel-transpiler
   font-awesome-sass
   jekyll
   jekyll-assets

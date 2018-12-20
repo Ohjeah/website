@@ -2,7 +2,9 @@
 
 ---
 <!DOCTYPE html>
-<html>
+{% assign lang = page.locale | default: site.locale | default: 'en-US' %}
+
+<html lang="{{ lang }}">
   {% include head.html %}
   <body>
     <main class="wrapper">

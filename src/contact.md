@@ -11,6 +11,6 @@ For some privacy: here is my [GPG public key]({{ '/dl/key.asc' | absolute_url }}
 
 ## Some other profiles:
 
-[<i class="ai ai-researchgate-square ai-2x"></i>](https://www.researchgate.net/profile/Markus_Quade) [<i class="ai ai-google-scholar-square ai-2x"></i>](https://scholar.google.de/citations?user=rGjuWxAAAAAJ) [<i class="ai ai-orcid-square ai-2x"></i>](http://orcid.org/0000-0002-9123-048X) [<i class="fab fa-github-square fa-2x"></i>]({{ site.author.github }}) [<i class="fa fa-twitter-square fa-2x"></i>]({{ site.author.twitter }})
+[<i class="ai ai-researchgate ai-2x"></i>](https://www.researchgate.net/profile/Markus_Quade) [<i class="ai ai-google-scholar ai-2x"></i>](https://scholar.google.de/citations?user=rGjuWxAAAAAJ) [<i class="ai ai-orcid ai-2x"></i>](http://orcid.org/0000-0002-9123-048X) [<i class="fab fa-github fa-2x"></i>]({{ site.author.github }}) [<i class="fab fa-twitter fa-2x"></i>]({{ site.author.twitter }})
 
-Some of them are actually maintained <i class="fa fa-smile-o" aria-hidden="true"></i>
+Some of them are actually maintained <i class="far fa-smile-wink"></i>.

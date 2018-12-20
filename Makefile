@@ -26,6 +26,7 @@ install-assets: bundle npm bib
 	cp $(NPM_DIR)/jquery/dist/*.js $(VENDOR_DIR)/js/.
 	cp $(NPM_DIR)/academicons/css/academicons.css $(VENDOR_DIR)/css/.
 	cp $(NPM_DIR)/academicons/fonts/* $(VENDOR_DIR)/fonts/.
+	cp $(NPM_DIR)/datejs/lib/* $(VENDOR_DIR)/
 
 serve: install-assets
 	$(JEKYLL) serve
