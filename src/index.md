@@ -12,6 +12,6 @@ title: Home
   My research promotes genetic programming based symbolic regression and its application to dynamical systems. I am broadly interested in time series prediction, system identification, control theory, and synchronization.
   </p>
 
-  For a detailed description of what I do <a href="{{ '/about' | relative_url }}">click here</a>.
+  For a detailed description of what I do <a href="{{ '/cv' | relative_url }}">click here</a>.
 
 </div>
