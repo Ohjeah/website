@@ -34,7 +34,7 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.1.5)
     ffi (1.9.25)
-    font-awesome-sass (5.5.0.1)
+    font-awesome-sass (5.6.1)
       sassc (>= 1.11)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
