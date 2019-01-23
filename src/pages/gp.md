@@ -1,7 +1,9 @@
 ---
 layout: page
-permalink: /v1/
+permalink: /gp/
 ---
+
+# Random Expressions
 
 <video width="320" height="240" controls>
   <source src="http://www.stat.physik.uni-potsdam.de/~mquade/random_trees.mp4" type="video/mp4">

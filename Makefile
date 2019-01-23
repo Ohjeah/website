@@ -27,6 +27,7 @@ install-assets: bundle npm bib
 	cp $(NPM_DIR)/academicons/css/academicons.css $(VENDOR_DIR)/css/.
 	cp $(NPM_DIR)/academicons/fonts/* $(VENDOR_DIR)/fonts/.
 	cp $(NPM_DIR)/datejs/lib/* $(VENDOR_DIR)/
+	cp $(NPM_DIR)/github-calendar/dist/* $(VENDOR_DIR)/.
 
 serve: install-assets
 	$(JEKYLL) serve

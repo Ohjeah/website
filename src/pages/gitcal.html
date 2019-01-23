@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /gitcal/
+---
+<div class="bag fixed">
+    <div class="calendar">
+        <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
+    </div>
+    {% asset https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js %}
+    {% asset https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js %}
+    {% asset github-calendar.min.js %}
+    <script type="text/javascript">
+         GitHubCalendar(".calendar", "{{ site.author.github }}", { responsive: true });
+    </script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+<script>hljs.highlightBlock(document.querySelector("pre"))</script>
