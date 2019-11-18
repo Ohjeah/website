@@ -9,14 +9,13 @@ locale: en-US
 ## Career
 
 ### [Ambrosys GmbH](http://www.ambrosys.de) *Potsdam*
+#### Technical Lead *:range: 2019-05*
 
-#### Research & Development *:range: 2014-04*
-
-* Advocate for reproducible science, CI/CD and clean code
+### [Ambrosys GmbH](http://www.ambrosys.de) *Potsdam*
+#### Research & Development *:range: 2014-04 2019-04*
 
 ### [4cast GmbH & Co. KG](https://4-cast.de/) *Potsdam*
-
-#### Chief Software Developer *:range: 2016-01*
+#### Chief Software Developer *:range: 2016-01 2019-04*
 
 ## Education
 

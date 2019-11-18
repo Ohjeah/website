@@ -300,11 +300,15 @@ $element-margin-top: -8pt;
   font-size: 16pt;
 }
 
-#print-btn {
-  background-color: $base-background-color;
-  color: $blue-color;
-  @media print {
-    color: white;
-    background-color: white;
-  }
+.flexbox {
+  display: flex;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  text-align: right;
+  flex-grow: 1;
 }

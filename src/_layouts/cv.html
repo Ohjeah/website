@@ -38,7 +38,15 @@ layout: default
         {{ content }}
       </div>
       <div id="date">
-      Last Update: {% last_modified_at %m/%d/%Y %}. A detailed CV is available upon <a href="{{'/contact' | prepend: site.baseurl }}">request</a>.
+          A detailed CV is available upon <a href="{{'/contact' | prepend: site.baseurl }}">request</a>.<br><br>
+          <div class="flexbox">
+            <div class="left">
+                Last Update: {% last_modified_at %m/%d/%Y %}.
+            </div>
+            <div class="right">
+                <a onclick="window.print()" href="#"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
+            </div>
+          </div>
       </div>
     </div>
   </div>
