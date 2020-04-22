@@ -11,9 +11,10 @@ bib:
 	mkdir -p $(VENDOR_DIR)/bib
 	wget https://raw.githubusercontent.com/Ohjeah/bibliography/master/references.bib -O $(VENDOR_DIR)/bib/ref.bib
 
-bundle: Gemfile Gemfile.lock
+bundle: Gemfile #Gemfile.lock
 	$(BUNDLE) config 	jobs 8
-	$(BUNDLE) install --path $(BUNDLE_DIR)
+	$(BUNDLE) config set path $(BUNDLE_DIR)
+	$(BUNDLE) install
 
 npm: package.json package-lock.json
 	$(NPM) install
@@ -41,3 +42,6 @@ dist-clean: clean
 clean:
 	rm -r .jekyll-cache
 	rm -r $(VENDOR_DIR)
+
+docker:
+	docker run -p 4000:4000 -p 35729:35729 -v `pwd`:/src -it jekyll/builder:3.8.4 bash -c "cd /src && make serve"

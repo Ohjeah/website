@@ -47,7 +47,7 @@ scholar:
   order:        descending
   group_by:     type
   group_order:  ascending
-  type_order:   [misc, article, books, inproceedings, theses]
+  type_order:   [article, misc, books, inproceedings, theses]
   type_names:   {misc: Preprints}
   #bibliography_group_tag: [h3, h4, h5, b]
   bibliography_list_tag: "ul"

@@ -1,17 +1,12 @@
 ---
-layout: default
+layout: index
 title: Home
 ---
 
-<center>
-{% asset author.jpg width=300 height=auto %}
-</center>
-<div class="container">
+Hi, I'm **Markus Quade**.
 
-  <p class="lead">Hi, I'm <strong class="author-name" itemprop="name">{{ site.author.first_name }} {{ site.author.last_name }}</strong>. <br>
-  My research promotes genetic programming based symbolic regression and its application to dynamical systems. I am broadly interested in time series prediction, system identification, control theory, and synchronization.
-  </p>
+My research is focussed on symbolic regression and its application to dynamical systems for time series prediction, system identification and control. More broadly I am interested in complex systems and stochastic processes. 
 
-  For a detailed description of what I do <a href="{{ '/cv' | relative_url }}">click here</a>.
+I am working as a Technical Lead at [Ambrosys](www.ambrosys.de). Our work is focussed on software development, system design as well as consulting with topics ranging from machine learning, mobility, energy to complex systems and MLOps. We are involved in many research activities related to data science, in particular we push on artificial intelligence and develop our own tools to speed up development and raise quality.
 
-</div>
+If you want to get in touch just send me an [<i class="far fa-envelope" aria-hidden="true"></i>](mailto:{{ site.author.email }}).
