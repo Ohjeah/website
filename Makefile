@@ -31,7 +31,7 @@ install-assets: bundle npm bib
 	cp $(NPM_DIR)/github-calendar/dist/* $(VENDOR_DIR)/.
 
 serve: install-assets
-	$(JEKYLL) serve
+	$(JEKYLL) serve --livereload --host=0.0.0.0
 
 build: install-assets
 	$(JEKYLL) build
