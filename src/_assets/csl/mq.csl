@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
   <info>
-    <title>IEEE (with URL)</title>
-    <id>http://www.zotero.org/styles/ieee-with-url</id>
-    <link href="http://www.zotero.org/styles/ieee-with-url" rel="self"/>
-    <link href="http://www.ieee.org/documents/style_manual.pdf" rel="documentation"/>
-    <link href="http://www.ieee.org/documents/auinfo07.pdf" rel="documentation"/>
+    <title>Markus CSL File</title>
     <author>
-      <name>Michael Berkowitz</name>
-      <email>mberkowi@gmu.edu</email>
+      <name>Markus Quade</name>
+      <email>schreib@markusqua.de</email>
     </author>
-    <contributor>
-      <name>Julian Onions</name>
-      <email>julian.onions@gmail.com</email>
-    </contributor>
-    <contributor>
-      <name>Rintze Zelle</name>
-      <uri>http://twitter.com/rintzezelle</uri>
-    </contributor>
-    <contributor>
-      <name>Stephen Frank</name>
-      <uri>http://www.zotero.org/sfrank</uri>
-    </contributor>
-    <contributor>
-      <name>Sebastian Karcher</name>
-    </contributor>
     <category citation-format="numeric"/>
     <category field="engineering"/>
     <category field="generic-base"/>
-    <updated>2012-10-18T22:38:43+00:00</updated>
+    <updated>2020-04-30</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -57,26 +38,10 @@
     </choose>
   </macro>
   <macro name="issued">
-    <choose>
-      <if type="article-journal report" match="any">
-        <date variable="issued">
-          <date-part name="month" form="short" suffix=" "/>
-          <date-part name="year" form="long"/>
-        </date>
-      </if>
-      <else-if type=" bill book chapter graphic legal_case legislation motion_picture paper-conference song thesis" match="any">
-        <date variable="issued">
-          <date-part name="year" form="long"/>
-        </date>
-      </else-if>
-      <else>
-        <date variable="issued">
-          <date-part name="day" form="numeric-leading-zeros" suffix="-"/>
-          <date-part name="month" form="short" suffix="-" strip-periods="true"/>
-          <date-part name="year" form="long"/>
-        </date>
-      </else>
-    </choose>
+    <date variable="issued">
+      <date-part name="month" form="short" suffix=" "/>
+      <date-part name="year" form="long"/>
+    </date>
   </macro>
   <macro name="author">
     <names variable="author">
@@ -220,7 +185,7 @@
   <bibliography entry-spacing="0" second-field-align="flush">
     <layout>
       <!-- Citation Number -->
-      <!-- <text variable="citation-number" prefix="[" suffix="]"/>
+      <!-- <text variable="citation-number" prefix="[" suffix="]"/>-->
       <!-- Author(s) -->
       <text macro="author" suffix=", "/>
       <!-- Rest of Citation -->
@@ -232,7 +197,6 @@
               <text macro="title" font-style="bold" font-style="italic"/>
               <text variable="container-title" font-style="italic" form="short"/>
               <text macro="locators"/>
-              <text macro="page"/>
               <text macro="issued"/>
             </group>
           </if>
@@ -240,9 +204,8 @@
             <group delimiter=", ">
               <text macro="title"/>
               <text macro="event"/>
-              <text macro="issued"/>
               <text macro="locators"/>
-              <text macro="page"/>
+              <text macro="issued"/>
             </group>
           </else-if>
           <else-if type="report">
@@ -315,14 +278,10 @@
             </group>
           </else-if>
           <else>
-            <group delimiter=", " suffix=". ">
-              <text macro="title"/>
-              <text variable="container-title" font-style="italic"/>
-              <text macro="locators"/>
-            </group>
             <group delimiter=", ">
-              <text macro="publisher"/>
-              <text macro="page"/>
+              <text macro="title" font-style="bold" font-style="italic"/>
+              <text variable="container-title" font-style="italic" form="short"/>
+              <text macro="locators"/>
               <text macro="issued"/>
             </group>
           </else>

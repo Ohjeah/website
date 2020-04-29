@@ -4,6 +4,18 @@
 
 
 <!-- {{ reference | replace_first: 'M. Quade', '<strong>M. Quade</strong>' }} -->
-{% if entry.url %}<a href="{{entry.url}}">{% endif %}
-   {{ reference | replace_first: 'M. Quade', '<strong>M. Quade</strong>' }} {% if link %} <a href="{{link}}"><i class="far fa-file-pdf" aria-hidden="true"></i></a>{% endif %}
-{% if entry.url %}</a>{% endif %}
+
+
+<!-- {% if entry.url %}<a href="{{entry.url}}">{% endif %}
+   {{ reference | replace_first: 'M. Quade', '<strong>M. Quade</strong>' }}
+{% if entry.url %}</a>{% endif %} -->
+{{ reference }}
+<small>
+{% if entry.doi %}<br><a href="https://doi.org/{{entry.doi}}">DOI: {{entry.doi}}</a>{% endif %}
+{%- if entry.eprint -%}<br>
+{%- if entry.archiveprefix == "arXiv" %}<a href="https://arxiv.org/abs/{{entry.eprint}}">{% endif -%}
+{{ entry.archiveprefix }}: {{entry.eprint}} [{{ entry.primaryclass }}]
+{%- if entry.archiveprefix == "arXiv" %}</a>{% endif -%}
+{%- endif -%}
+{%- if entry.url %}{% if entry.doi == blank %}{% if entry.eprint == blank %}<br>URL: <a href="{{entry.url}}">{{entry.url}}</a>{%- endif -%}{%- endif -%}{%- endif -%}
+</small>

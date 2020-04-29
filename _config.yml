@@ -42,7 +42,7 @@ scholar:
   source:       "./_assets/vendor/bib"
   bibliography: "ref.bib"
   repository: "./dl"
-  style:        "./_assets/csl/ieee-with-url.csl"
+  style:        "./_assets/csl/mq.csl"
   sort_by:      year
   order:        descending
   group_by:     type
