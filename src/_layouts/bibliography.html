@@ -28,4 +28,5 @@
 {% if entry.archiveprefix == "arXiv" %}</a>{% endif %}
 {% endif %}
 {%- if entry.url %}{% if entry.doi == blank %}{% if entry.eprint == blank %} <a href="{{entry.url}}">[URL]</a>{%- endif -%}{%- endif -%}{%- endif -%}
+{% if link %} <a href="{{link}}">[File]</a>{% endif %}
 </small>
