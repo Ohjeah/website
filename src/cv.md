@@ -9,7 +9,13 @@ locale: en-US
 ## Career
 
 ### [Ambrosys GmbH](http://www.ambrosys.de) *Potsdam*
-#### Technical Lead *:range: 2019-05*
+#### Associate & CTO *:range: 2020-08*
+
+### [Mantik UG](https://mantik.ai/) *Potsdam*
+#### Co-Founder *:range: 2020-06*
+
+### [Ambrosys GmbH](http://www.ambrosys.de) *Potsdam*
+#### Technical Lead *:range: 2019-05 2020-07*
 
 ### [Ambrosys GmbH](http://www.ambrosys.de) *Potsdam*
 #### Research & Development *:range: 2014-04 2019-04*
