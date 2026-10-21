@@ -1,10 +1,10 @@
 source: src
 destination: public
-url: markusqua.de
+url: https://www.markusqua.de
 
 title: "Markus Quade"
 
-repo: http://github.com/Ohjeah/Ohjeah.github.io-source
+repo: https://github.com/Ohjeah/Ohjeah.github.io
 
 unpublished: false
 future: false
@@ -20,8 +20,8 @@ author:
   address : Potsdam, Germany
   job      : Physicist
   email    : schreib@markusqua.de
-  web      : http://www.markusqua.de
-  url      : http://www.markusqua.de
+  web      : https://www.markusqua.de
+  url      : https://www.markusqua.de
   github   : Ohjeah
   orcid    : 0000-0002-9123-048X
   gscholar : rGjuWxAAAAAJ
